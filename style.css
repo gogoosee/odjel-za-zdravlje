@@ -1,0 +1,1167 @@
+/*********************************************************************************************
+
+Theme Name: Massive Press
+Theme URI: http://www.press75.com/
+Description: Designed by Jason Schuller
+Version: 2.0
+Author: Press75.com
+Author URI: http://www.press75.com/
+
+**********************************************************************************************
+
+Designed and Built by Jason Schuller - theSevenFive.com
+
+CSS, XHTML and Design Files are all Copyright 2007-2011 Circa75 Media, LLC
+
+Be inspired, but please don't steal :)
+
+**********************************************************************************************
+
+1.  CSS Reset (DO NOT EDIT)
+2.  Universal Grid Classes (DO NOT EDIT)
+3.  Clear Fix (DO NOT EDIT)
+4.  Font Styles
+5.  Header and Menu Styles
+6.  Universal Button Styles
+7.  Universal Field and Widget Styles
+8.  Main Content Styles
+9.  Post Content Styles
+10. Featured Content Slider
+11. Widget Styles
+12. Post Comment Styles
+13. Footer Styles
+
+**********************************************************************************************/
+
+
+
+
+/* 1.  CSS Reset (DO NOT EDIT)
+**********************************************************************************************/
+
+html{color:#444;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#444;}
+
+@-ms-viewport{
+    width: device-width;
+}
+
+
+/* 2.  Universal Grid Classes (DO NOT EDIT)
+**********************************************************************************************/
+
+.row{width:100%;float:left}.grid-1{width:5.83333333333%}.grid-2{width:14.1666666667%}.grid-3{width:22.5%}.grid-4{width:30.8333333333%}.grid-5{width:39.1666666667%}.grid-6{width:47.5%}.grid-7{width:55.8333333333%}.grid-8{width:64.1666666667%}.grid-9{width:72.5%}.grid-10{width:80.8333333333%}.grid-11{width:89.1666666667%}.grid-12{width:97.5%}.grid-1,.grid-2,.grid-3,.grid-4,.grid-5,.grid-6,.grid-7,.grid-8,.grid-9,.grid-10,.grid-11,.grid-12{margin-left:1.25%;margin-right:1.25%;float:left;display:block}.alpha{margin-left:0}.omega{margin-right:0}.container{width:960px;margin:0px auto}
+
+
+
+
+/* 3.  Clear Fix (DO NOT EDIT)
+**********************************************************************************************/
+
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
+
+
+
+
+/* 4.  Font Styles
+**********************************************************************************************/
+
+body {
+font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+font-size: 12px;
+line-height: 15px;
+color: #444444;
+}
+
+a:link, a:visited {
+color: #444444;
+text-decoration: none;
+}
+
+
+
+
+/* 5.  Header and Menu Styles
+**********************************************************************************************/
+
+#header {
+background: #a3a3a3 url("bg-header.png") top left repeat-x;
+font-size: 11px;
+color: #CACBC6;
+height: 246px;
+
+/* Text Shadow */
+text-shadow: 0 1px 1px #333333;
+}
+
+#header a {
+color: #CACBC6;
+}
+
+#header a:hover {
+color: #EBEBEB;
+}
+
+#tagline-text, 
+#header-nav,
+#footer-nav {
+height: 20px;
+padding: 12px 0 0 0;
+}
+
+#header-nav ul,
+#footer-nav ul {
+float: right;
+}
+
+#main-nav ul {
+float: left;
+margin-top: 10px;
+}
+
+#header-nav ul li,
+#main-nav ul li,
+#footer-nav ul li {
+position: relative;
+border-right: 1px dotted #666666;
+margin-right: 10px;
+padding-right: 10px;
+float: left;
+}
+
+#header-nav ul ul,
+#main-nav ul ul,
+#footer-nav ul ul {
+position: absolute;
+z-index: 100000;
+background: #232323;
+width: 120px;
+padding: 6px 10px 0 10px;
+margin: 7px 0 0 -10px;
+font-size: 11px;
+top: -9999em;
+
+/* Border Radius */
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+}
+
+#header-nav ul ul ul,
+#main-nav ul ul ul,
+#footer-nav ul ul ul {
+margin-top: -5px;
+margin-left: 7px;
+}
+
+#header-nav ul li:hover ul,
+#header-nav ul li.sfHover ul,
+#main-nav ul li:hover ul,
+#main-nav ul li.sfHover ul,
+#footer-nav ul li:hover ul,
+#footer-nav ul li.sfHover ul {
+top: 10px;
+z-index: 99;
+}
+
+#header-nav ul li:hover li ul,
+#header-nav ul li.sfHover li ul,
+#header-nav ul li li:hover li ul,
+#header-nav ul li li.sfHover li ul,
+#header-nav ul li li li:hover li ul,
+#header-nav ul li li li.sfHover li ul,
+#main-nav ul li:hover li ul,
+#main-nav ul li.sfHover li ul,
+#main-nav ul li li:hover li ul,
+#main-nav ul li li.sfHover li ul,
+#main-nav ul li li li:hover li ul,
+#main-nav ul li li li.sfHover li ul,
+#footer-nav ul li:hover li ul,
+#footer-nav ul li.sfHover li ul,
+#footer-nav ul li li:hover li ul,
+#footer-nav ul li li.sfHover li ul,
+#footer-nav ul li li li:hover li ul,
+#footer-nav ul li li li.sfHover li ul { 
+top: -9999em; 
+}
+
+#header-nav ul li li:hover ul,
+#header-nav ul li li.sfHover ul,
+#header-nav ul li li li:hover ul,
+#header-nav ul li li li.sfHover ul,
+#header-nav ul li li li li:hover ul,
+#header-nav ul li li li li.sfHover ul,
+#main-nav ul li li:hover ul,
+#main-nav ul li li.sfHover ul,
+#main-nav ul li li li:hover ul,
+#main-nav ul li li li.sfHover ul,
+#main-nav ul li li li li:hover ul,
+#main-nav ul li li li li.sfHover ul,
+#footer-nav ul li li:hover ul,
+#footer-nav ul li li.sfHover ul,
+#footer-nav ul li li li:hover ul,
+#footer-nav ul li li li.sfHover ul,
+#footer-nav ul li li li li:hover ul,
+#footer-nav ul li li li li.sfHover ul {
+left: 120px;
+top: -1px;
+}
+
+#header-nav ul li:last-child, 
+#header-nav ul ul li,
+#main-nav ul li:last-child, 
+#main-nav ul ul li,
+#footer-nav ul li:last-child, 
+#footer-nav ul ul li {
+border: none;
+margin: 0;
+padding: 0;
+}
+
+#header-nav ul ul li,
+#main-nav ul ul li,
+#footer-nav ul ul li {
+border-bottom: 1px dotted #666666;
+width: 100%;
+float: left;
+margin: 0 0 5px 0;
+padding: 0 0 5px 0;
+}
+
+#header-nav ul ul li:last-child,
+#main-nav ul ul li:last-child,
+#footer-nav ul ul li:last-child {
+border: none;
+margin: 0 0 5px 0;
+padding: 0 0 5px 0;
+}
+
+#header-nav ul li.twitter,
+#main-nav ul li.twitter,
+#footer-nav ul li.twitter {
+background: url("") left no-repeat;
+padding-left: 18px;
+}
+
+#header-nav ul li.facebook,
+#main-nav ul li.facebook,
+#footer-nav ul li.facebook {
+background: url("") left no-repeat;
+padding-left: 18px;
+}
+
+li.subscribe {
+background: url("") left no-repeat;
+padding-left: 40px;
+}
+
+#logo,
+#header-ad {
+padding: 0px 0 0px 0;
+}
+
+#logo h1 {
+font-family: 'Droid Serif', arial, serif;
+font-size: 60px;
+height: 56px;
+padding-top: 37px;
+}
+
+#logo h1 a {
+color: #FFFFFF;
+}
+
+#header-ad img {
+#background: url("") repeat;
+float: right;
+padding: 55px;
+}
+
+#search input {
+background: none;
+border: none;
+padding: 0;
+}
+
+input#s {
+border-bottom: 1px dotted #666666;
+color: #CACBC6;
+font-size: 11px;
+width: 100%;
+margin: 6px 0 0 0;
+padding: 5px 0 4px 0;
+
+/* Text Shadow */
+text-shadow: 0 1px 1px #333333;
+}
+
+/* Just for Firefox */
+@-moz-document url-prefix() {
+	input#s {
+	margin: 5px 0 0 0;
+	}
+}
+
+input#search-submit {
+background: url("search.png") no-repeat;
+width: 16px;
+height: 16px;
+float: right;
+margin: 10px 0 -26px 0;
+cursor: pointer;
+}
+
+#header img:hover,
+input#search-submit:hover {
+opacity: 0.8;
+}
+
+#search input:focus {
+outline-width:0;
+}
+
+
+
+
+/* 6.  Universal Button Styles
+**********************************************************************************************/
+
+a.continue-reading,
+#pagination a,
+ol.commentlist li div.reply a,
+#submit {
+background: #EAEAEA;
+border: 1px solid #ABABAB;
+color: #707070;
+font-family: 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+font-size: 11px;
+font-weight: bold;
+text-align: center;
+outline: none;
+float: left;
+padding: 3px 8px 4px 8px;
+
+/* Border Radius */
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+
+/* Background Gradients */
+background: -moz-linear-gradient(top, #EFEFEF, #D8D8D8) #D8D8D8;
+background: -webkit-gradient(linear, left top, left bottom, from(#EFEFEF), to(#D8D8D8)) #D8D8D8;
+background: linear-gradient(top, #EFEFEF, #D8D8D8) #D8D8D8;
+
+/* Shadows */
+box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 1px rgba(255, 255, 255, .8) inset;
+-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 1px rgba(255, 255, 255, .8) inset;
+-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 1px rgba(255, 255, 255, .8) inset;
+
+/* Font Smoothing */
+-webkit-font-smoothing: antialiased;
+}
+
+a.continue-reading:hover,
+#pagination a:hover,
+ol.commentlist li div.reply a:hover,
+#submit:hover {
+background: #F1F1F1;
+cursor: pointer;
+
+/* Background Gradients */
+background: -moz-linear-gradient(top, #F6F6F6, #E3E3E3) #E3E3E3;
+background: -webkit-gradient(linear, left top, left bottom, from(#F6F6F6), to(#E3E3E3)) #E3E3E3;
+background: linear-gradient(top, #F6F6F6, #E3E3E3) #E3E3E3;
+}
+
+
+
+
+/* 7.  Universal Field and Widget Styles
+**********************************************************************************************/
+
+textarea,
+#author, 
+#email, 
+#url {
+font-family: 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+background: #FFFFFF url("hatch.png") repeat;
+border: 1px solid #CCCCCC;
+padding: 8px 10px 8px 10px;
+outline: none;
+color: #666666;
+
+/* Border Radius */
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+
+/* Shadows */
+box-shadow: 0 1px 2px rgba(0, 0, 0, .15) inset;
+-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .15) inset;
+-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .15) inset;
+
+/* Transitions */
+-moz-transition: border .2s linear, box-shadow .2s linear;
+-webkit-transition: border .2s linear, -webkit-box-shadow .2s linear;
+}
+
+textarea:hover,
+#author:hover, 
+#email:hover, 
+#url:hover {
+-webkit-box-shadow:0 0 15px #C8C8C8; 
+-moz-box-shadow: 0 0 15px #C8C8C8; 
+box-shadow:0 0 15px #C8C8C8; 
+}
+
+
+
+
+
+/* 8.  Main Content Styles
+**********************************************************************************************/
+
+#main {
+padding: 30px 0 0 0;
+font-size: 11px;
+line-height: 18px;
+}
+
+#main h3,
+.post h2,
+.page h2,
+h3.widget-heading {
+border-top: 1px solid #E5E5E5;
+border-bottom: 1px solid #E5E5E5;
+background: url("hatch.png") repeat;
+font-size: 14px;
+color: #555555;
+margin: 0 0 30px 0;
+padding: 6px 0 6px 0;
+
+/* CSS3 Styles */
+text-shadow: 0 1px 1px #CCCCCC;
+}
+
+/* Just for Firefox */
+@-moz-document url-prefix() {
+	#main h3,
+	.post h2,
+	.page h2,
+	h3.widget-heading {
+	padding: 6px 0 7px 0;
+	}
+}
+
+#home-second-left,
+#home-second-right {
+width: 216px;
+float: left;
+}
+
+#home-second-right {
+margin: 0 0 0 24px;
+}
+
+#pagination {
+margin: 0 0 30px 0;
+}
+
+#pagination a {
+margin: 0 5px 0 0;
+}
+
+#pagination a.current-page {
+opacity: 0.5;
+}
+
+
+
+
+/* 9.  Post Content Styles
+**********************************************************************************************/
+
+.post,
+.page,
+.button-container {
+color: #737373;
+width: 100%;
+float: left;
+margin: 0 0 30px 0;
+}
+
+.button-container {
+margin: 0;
+}
+
+.post p, 
+.page p {
+margin: 0 0 15px 0;
+}
+
+.post h2,
+.page h2 {
+margin: 0;
+}
+
+.post-tweet {
+position: absolute;
+margin: -26px 0 0 400px;
+}
+
+a.post-comment-circle {
+background: #BB372F;
+width: 30px;
+height: 24px;
+text-align: center;
+color: #FFF;
+float: left;
+margin: -316px 0 0 432px;
+padding: 6px 0 0 0;
+
+/* Text Shadow */
+text-shadow: 0 1px 1px #6E2221;
+
+/* Border Radius */
+border-radius: 20px;
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+}
+
+a.post-comment-circle:hover {
+background: #232323;
+
+/* Text Shadow */
+text-shadow: 0 1px 1px #000000;
+}
+
+.post-meta {
+font-size: 10px;
+color: #777;
+margin: 6px 0 6px 0;
+}
+
+.post-meta a {
+color: #777777;
+border-bottom: 1px dotted #CCCCCC;
+}
+
+.post-meta a:hover { 
+color: #444444;
+}
+
+a.post-image {
+border: 1px solid #E5E5E5;
+margin: 0 0 15px 0;
+padding: 8px 8px 3px 8px;
+float: left;
+}
+
+a.post-image:hover {
+background: url("hatch.png") repeat;
+}
+
+#posts .post-content h1,
+#posts .post-content h2,
+#posts .post-content h3,
+#posts .post-content h4,
+#posts .post-content h5 {
+border: none;
+background: none;
+font-size: 14px;
+margin: 0;
+padding: 0;
+text-shadow: none;
+}
+
+.post-content strong {
+color: #555555;
+font-weight: bold;
+}
+
+.post-content a:link,
+.post-content a:visited {
+color: #777777;
+border-bottom: 1px dotted #777777;
+}
+
+.post-content a:hover {
+color: #444444;
+border-color: #444444;
+}
+
+.post-content ul,
+.post-content ol {
+margin-bottom: 20px;
+padding-left: 15px;
+}
+
+.post-content ul li {
+list-style: disc;
+}
+
+.post-content ol li {
+list-style: decimal;
+}
+
+.post-content blockquote {
+background: url("") top left no-repeat;
+padding-left: 40px;
+font-style: italic;
+color: #999999;
+}
+
+p img {
+padding: 0;
+max-width: 100%;
+}
+
+.post-content .alignright {
+float: right;
+}
+
+.post-content .alignleft {
+float: left;
+}
+
+img.centered {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+img.alignright {
+float: right;
+margin: 0 0 2px 15px;
+}
+
+img.alignleft {
+float: left;
+margin: 0 15px 2px 0;
+}
+
+.wp-caption {
+text-align: center;
+padding: 5px 5px 5px 5px;
+margin: 5px 0 20px 0;
+}
+
+.wp-caption.alignright {
+margin: 0 0 10px 25px;
+}
+
+.wp-caption.aligncenter {
+margin-left: auto;
+margin-right: auto;
+}
+
+.wp-caption.alignleft {
+margin: 0 25px 10px 0;
+}
+
+.wp-caption img {
+border: 1px solid #E5E5E5;
+padding: 4px;
+margin: 0 0 5px;
+}
+
+.wp-caption .wp-caption-text, .wp-caption .wp-caption-dd {
+font-size: 11px !important;
+text-align: center; 
+margin: 0;
+padding: 0;
+}
+
+.wp-caption a:link {
+border: none;
+}
+
+
+
+/* 10. Featured Content Slider
+**********************************************************************************************/
+
+#featured-container {
+border: 1px solid #E5E5E5;
+padding: 8px;
+}
+
+#featured-container a {
+color: #FFFFFF;
+}
+
+#featured-container a:hover {
+color: #BB372F;
+}
+
+#featured-container:hover {
+background: url("hatch.png") repeat;
+}
+
+#featured { 
+background: #000 url("") no-repeat center center;
+width: 438px;
+height: 278px;
+overflow: hidden;
+}
+
+#featured img {
+width: 438px;
+height: 278px;
+}
+
+#featured>img,  
+#featured>div,
+#featured>a { 
+display: none; 
+}
+
+div.orbit-wrapper {
+width: 1px;
+height: 1px;
+position: relative; 
+}
+
+div.orbit {
+width: 1px;
+height: 1px;
+position: relative;
+overflow: hidden 
+}
+
+div.orbit>img {
+position: absolute;
+top: 0;
+left: 0;
+display: none; 
+}
+
+div.orbit>a {
+border: none;
+position: absolute;
+top: 0;
+left: 0;
+line-height: 0; 
+display: none; 
+}
+
+.orbit>div {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%; 
+}
+
+div.timer {
+width: 40px;
+height: 40px;
+overflow: hidden;
+position: absolute;
+top: 10px;
+right: 10px;
+opacity: .6;
+cursor: pointer;
+z-index: 1001; 
+}
+
+span.rotator {
+background: url("") no-repeat;
+display: block;
+width: 40px;
+height: 40px;
+position: absolute;
+top: 0;
+left: -20px;
+z-index: 3; 
+}
+
+span.mask {
+display: block;
+width: 20px;
+height: 40px;
+position: absolute;
+top: 0;
+right: 0;
+z-index: 2;
+overflow: hidden; 
+}
+
+span.rotator.move {
+left: 0;
+}
+
+span.mask.move {
+background: url("") repeat 0 0; 
+width: 40px;
+left: 0;
+}
+
+span.pause {
+background: url("") no-repeat;
+display: block;
+width: 40px;
+height: 40px;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 4;
+opacity: 0;
+}
+
+span.pause.active {
+background: url("") no-repeat 0 -40px 
+}
+
+div.timer:hover span.pause,
+span.pause.active {
+opacity: 1; 
+}
+
+.orbit-caption {
+display: none;
+}
+
+.orbit-wrapper .orbit-caption a {
+background: #000;
+background: rgba(0,0,0,.6);
+z-index: 1000;
+color: #CACBC6;
+text-align: center;
+padding: 7px 12px 7px 12px;
+font-size: 12px;
+position: absolute;
+right: 0;
+bottom: 31px;
+
+/* Text Shadow */
+text-shadow: 0 1px 1px #333333;
+
+/* Border Radius */
+-moz-border-radius-topleft: 3px;
+-moz-border-radius-bottomleft: 3px;
+-webkit-border-top-left-radius: 3px;
+-webkit-border-bottom-left-radius: 3px;
+}
+
+div.slider-nav {
+display: block; 
+}
+
+div.slider-nav span {
+width: 35px;
+height: 130px;
+text-indent: -9999px;
+position: absolute;
+z-index: 1000;
+top: 50%;
+margin-top: -50px;
+cursor: pointer; 
+}
+
+div.slider-nav span.right {
+background: url("");
+right: 0; 
+}
+
+div.slider-nav span.left {
+background: url("");
+left: 0; 
+}
+
+.orbit-bullets {
+position: absolute;
+z-index: 1000;
+list-style: none;
+bottom: 12px;
+right: 12px;
+padding: 0; 
+}
+
+.orbit-bullets li {
+background: url("") no-repeat 0 0;
+float: left;
+margin-left: 8px;
+cursor: pointer;
+color: #999;
+text-indent: -9999px;
+width: 8px;
+height: 8px;
+overflow: hidden; 
+}
+
+.orbit-bullets li.active {
+color: #222;
+background-position: -8px 0; 
+}
+
+.orbit-bullets li.has-thumb {
+background: none;
+width: 100px;
+height: 75px; 
+}
+
+.orbit-bullets li.active.has-thumb {
+background-position: 0 0;
+border-top: 2px solid #000; 
+}
+
+
+
+
+/* 11. Widget Styles
+**********************************************************************************************/
+
+.widget {
+width: 100%;
+float: left;
+margin: 0 0 30px 0;
+font-size: 11px;
+color: #737373;
+line-height: 18px;
+}
+
+.sf_posts_widget img {
+border: 1px solid #E5E5E5;
+max-width: 198px;
+padding: 8px;
+margin: 0 0 5px 0;
+}
+
+.sf_posts_widget img:hover {
+background: url("hatch.png") repeat;
+}
+
+a.widget-comment-circle {
+background: #BB372F;
+width: 30px;
+height: 24px;
+text-align: center;
+color: #FFF;
+position: absolute;
+margin: -6px 0 0 192px;
+padding: 6px 0 0 0;
+
+/* Text Shadow */
+text-shadow: 0 1px 1px #6E2221;
+
+/* Border Radius */
+border-radius: 20px;
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+}
+
+a.widget-comment-circle:hover {
+background: #232323;
+
+/* Text Shadow */
+text-shadow: 0 1px 1px #000000;
+}
+
+.widget h2 {
+width: 100%;
+float: left;
+font-size: 12px;
+}
+
+.widget h2 a:hover {
+color: #BB372F;
+}
+
+span.widget-date {
+width: 100%;
+float: left;
+}
+
+.widget-post-excerpt {
+border-top: 1px solid #E5E5E5;
+float: left;
+margin: 10px 0 0 0;
+padding: 10px 0 0 0;
+}
+
+.sf_posts_widget ul li {
+width: 100%;
+float: left;
+margin: 0 0 30px 0;
+}
+
+.sf_posts_widget ul li.widget-no-excerpt {
+border-bottom: 1px solid #E5E5E5;
+margin: 0 0 10px 0;
+padding: 0 0 10px 0;
+}
+
+.sf_posts_widget ul li.widget-thumbnails {
+border: none;
+margin: 0 0 30px 0;
+padding: 0;
+}
+
+.sf_posts_widget ul li:last-child {
+border: none;
+width: 100%;
+float: left;
+margin: 0;
+}
+
+#twitter p {
+background: url("") top left no-repeat;
+margin: 0 0 8px 0;
+padding: 0 0 0 40px;
+}
+
+
+
+
+/* 12. Post Comment Styles
+**********************************************************************************************/
+
+#comments,
+#respond {
+width: 100%;
+float: left;
+}
+
+#comments {
+margin-top: 20px;
+}
+
+#comments ol li {
+list-style: none;
+}
+
+ol.commentlist li ul.children li,
+ol.commentlist li ul.children li.alt {
+padding-left: 20px;
+}
+
+ol.commentlist li ul.children li.depth-2 {margin: 0;}
+ol.commentlist li ul.children li.depth-3 {margin: 0;}
+ol.commentlist li ul.children li.depth-4 {margin: 0;}
+ol.commentlist li ul.children li.depth-5 {margin: 0;}
+
+ol.commentlist li div.reply {
+width: 100%;
+float: left;
+margin-bottom: 20px;
+}
+
+.vcard {
+margin-top: 10px;
+}
+
+.avatar {
+float: left;
+width: auto;
+border: 1px solid #E5E5E5;
+margin: 0 10px 0 0;
+padding: 4px;
+float: left;
+}
+
+.comment-author cite {
+float: left;
+font-style: normal;
+margin-top: 4px;
+}
+
+.comment-author {
+width: 100%;
+float: left;
+font-size: 12px;
+font-weight: normal;
+font-style: inherit;
+}
+
+.says {
+display: none;
+}
+
+.comment-meta a {
+text-transform: lowercase;
+font-style: italic;
+font-size: 10px;
+color: #888888;
+float: left;
+margin: -30px 0 12px 60px;
+}
+
+.comment-edit-link {
+display: none;
+}
+
+ol.commentlist li div.reply a {
+font-size: 10px;
+padding: 0 6px 1px 6px;
+}
+
+.cancel-comment-reply a {
+display: none;
+}
+
+h2.comments {
+margin-bottom: 20px;
+}
+
+#respond {
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+#respond label {
+width: 100%;
+float: left;
+}
+
+#author, 
+#email, 
+#url {
+width: 200px;
+float: left;
+margin-bottom: 10px;
+}
+
+#comment {
+width: 95%;
+}
+
+#submit {
+font-size: 12px;
+padding: 7px 12px 8px 12px;
+}
+
+
+
+
+/* 13. Footer Styles
+**********************************************************************************************/
+
+#footer {
+border-top: 1px solid #E5E5E5;
+padding: 10px 0 30px 0;
+font-size: 11px;
+color: #737373;
+line-height: 18px;
+}
+
+#footer a {
+color: #737373;
+}
+
+#footer h3 {
+color: #555555;
+font-size: 12px;
+}
+
+#footer-nav {
+height: auto;
+padding: 0;
+}
+
+#footer-nav ul li {
+border-right: 1px dotted #737373;
+}
+
+li#menu-item-8471 a {
+color:red !important;
+}
